@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Remove="appsecrets.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="appsecrets.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="VaultSharp" Version="1.7.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Ccs.Ppg.NotificationService\Ccs.Ppg.NotificationService.csproj" />
+		<ProjectReference Include="..\Ccs.Ppg.Utility.Authorization\Ccs.Ppg.Utility.Authorization.csproj" />
+		<ProjectReference Include="..\Ccs.Ppg.Utility.Logging\Ccs.Ppg.Utility.Logging.csproj" />
+		<ProjectReference Include="..\Ccs.Ppg.Utility.Swagger\Ccs.Ppg.Utility.Swagger.csproj" />
+	</ItemGroup>
+
+</Project>
