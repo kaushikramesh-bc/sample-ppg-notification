@@ -11,4 +11,4 @@ applications:
     - CF_SPACE-sso-pg-service
     - CF_SPACE-ssm-service
   env:
-    CACHE_NUGET_PACKAGES: false
+    CACHE_NUGET_PACKAGES: false1
