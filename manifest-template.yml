@@ -8,7 +8,7 @@ applications:
   routes:
     - route: CF_SPACE-api-notification.london.cloudapps.digital
   services:
-    - CF_SPACE-sso-pg-service
+    - CF_SPACE-sso-pg-service-1
     - CF_SPACE-ssm-service-1
   env:
     CACHE_NUGET_PACKAGES: false1
