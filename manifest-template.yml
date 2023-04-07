@@ -1,7 +1,7 @@
 ---
 applications:
 - name: CF_SPACE-api-notification
-  instances: 1
+  instances: 2
   memory: 512M
   path: Ccs.Ppg.NotificationService.API/bin/Release/net6.0
   buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack.git
