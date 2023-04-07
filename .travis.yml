@@ -6,7 +6,7 @@ addons:
     channel: latest/beta
 sudo: required
 language: csharp
-dotnet: 6.0.1
+dotnet: 6.0.2
 solution: ./Ccs.Ppg.NotificationService.sln
 install:
   - dotnet restore ./Ccs.Ppg.NotificationService.sln
